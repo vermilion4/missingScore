@@ -1,5 +1,6 @@
 //Test scores
-var scores = [45, 50, 55, 65, 70, 75, 80, 85, 90, 95];
+var scores = [45, 55, 60, 65, 70, 75, 80, 85, 90, 95];
+// var scores = [45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95];
 
 function missingScore(arr) {
     'use strict';
@@ -16,11 +17,11 @@ function missingScore(arr) {
         if (arr[i] - arr[i + 1] !== diff) {
             index = i + 1;
             missing = arr[i + 1] + diff;
+            return 'The missing score is ' + missing + ' found at position ' + index;
         }
     }
 
-    //result
-    return 'The missing score is ' + missing + ' found at position ' + index;
+    return "No Missing score"
 }
 
 //Function call
