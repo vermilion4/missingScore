@@ -1,11 +1,11 @@
 //Test scores
-var scores = [45, 55, 60, 65, 70, 75, 80, 85, 90, 95];
-// var scores = [45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95];
+let scores = [45, 55, 60, 65, 70, 75, 80, 85, 90, 95];
+// let scores = [45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95];
 
 function missingScore(arr) {
     'use strict';
     //difference between known scores and other bindings
-    var last = arr.length - 3,
+    let last = arr.length - 3,
         diff = arr[last] - arr[last + 1],
         index,
         missing,
